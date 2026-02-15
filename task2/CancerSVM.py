@@ -8,6 +8,3 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=42
 svm_rbf=SVC(kernel="rbf")
 svm_rbf.fit(x_train, y_train)
 print("RBF kernel SVM accuracy: ",svm_rbf.score(x_test,y_test))
-svm_linear=SVC(kernel="linear")
-svm_linear.fit(x_train,y_train)
-print("Linear SVM accuracy: ",svm_linear.score(x_test,y_test))
